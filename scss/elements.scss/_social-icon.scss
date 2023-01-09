@@ -1,0 +1,21 @@
+.footer__block-social {
+    margin-top: 125px;
+    display: flex;
+    gap: 23px;
+
+    @media screen and (max-width:$tablet){
+        margin-top: 51px;
+        justify-content: center;
+    }
+
+    &-social-item {
+    text-decoration: none;
+    }
+}
+svg:hover > .fill{
+    fill: #565656;
+    stroke: #F4F4F4;
+}
+svg:hover > path {
+    fill: #F4F4F4;
+}

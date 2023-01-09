@@ -1,0 +1,65 @@
+.footer {
+    background-color: $color-grey-light;
+    margin-top: 90px;
+
+    @media screen and (max-width:$mobile){
+        margin-top: 70px;
+    }
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width:$tablet){
+            flex-direction: column;
+            text-align: center;
+        }
+        &-title {
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 64px;
+            letter-spacing: 0.05em;
+            color: $color-black-default;
+            font-family: $primary-title;
+            margin: 70px 0 30px 0;
+
+            @media screen and (max-width:$tablet){
+                margin: 50px 0 20px 0;
+            }
+            @media screen and (max-width:$mobile){
+                font-size: 32px;
+                line-height: 42px;
+            }
+        
+        }
+        &-tel, &-email {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 166%;
+            letter-spacing: 0.1em;
+            color: $color-black-default;
+            display: block;
+            text-decoration: none;
+        }
+        &-tel {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__finish {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 166%;
+        letter-spacing: 0.1em;
+        color: $color-black-default;
+        padding: 25px 0 30px 0;
+        text-align: center;
+
+        @media screen and (max-width:$tablet){
+        padding: 40px 0 50px 0;
+        }
+        @media screen and (max-width:$mobile){
+        font-size: 16px;
+        }
+    }
+}

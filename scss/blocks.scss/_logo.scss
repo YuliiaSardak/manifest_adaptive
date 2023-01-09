@@ -1,0 +1,14 @@
+.header__logo {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.5em;
+    margin: 38px 0;
+
+    @media screen and (max-width:$tablet){
+        margin: 18px 0 68px 0;
+    }
+    @media screen and (max-width:$mobile){
+        margin: 18px 0 18px 0;
+    }
+}

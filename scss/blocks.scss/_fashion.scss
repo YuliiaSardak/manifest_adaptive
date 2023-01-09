@@ -1,0 +1,46 @@
+.fashion {
+    &__title {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 64px;
+        font-family: $primary-title;
+        letter-spacing: 0.05em;
+        margin-bottom: 70px;
+
+        @media screen and (max-width:$tablet){
+            font-size: 33px;
+            line-height: 50px;
+            margin-bottom: 50px;
+        }
+        @media screen and (max-width:$mobile){
+            font-size: 30px;
+            margin-bottom: 40px;
+        }
+    }
+    
+    &__image {
+        background-image: url('/image/arrow_desktop.jpg');
+
+        @media screen and (max-width:$tablet){
+            background-image: url('/image/arrow_tablet.jpg');
+        }
+        @media screen and (max-width:$mobile){
+            background-image: url('/image/arrow_mobile.jpg');
+        }
+    }
+
+    &__text {
+        width: 570px;
+
+        @media screen and (max-width:$tablet){
+            width: 700px;
+        }
+        @media screen and (max-width:$mobile){
+            width: 300px;
+        }
+
+        &-pretitle {
+            margin-top: 30px;
+        }
+    }
+}

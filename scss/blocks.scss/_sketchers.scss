@@ -1,0 +1,21 @@
+.sketchers {
+    &__image {
+        background-image: url('/image/building_desktop.jpg');
+        background-size: cover;
+        margin-top: 50px;
+
+        @media screen and (max-width:$tablet){
+            background-image: url('/image/building_tablet.jpg');
+        }
+        @media screen and (max-width:$mobile){
+            background-image: url('/image/building_mobile.jpg');
+            margin-top: 40px;
+        }
+    }
+
+    &__text {
+        &-pretitle {
+            margin-top: 20px;
+        }
+    }
+}
